@@ -80,7 +80,7 @@ function Line({ defaultStart, defaultEnd }) {
 
 const camContext = React.createContext()
 function Controls({ children }) {
-  const { gl, camera, invalidate, intersect } = useThree()
+  const { gl, camera, invalidate } = useThree()
   const api = useState(true)
   const ref = useRef()
   useEffect(() => {
